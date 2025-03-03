@@ -16,6 +16,7 @@ use crate::state::{config as configure, Config};
 pub fn instantiate(
     deps: DepsMut,
     env: Env,
+    add: address,
     info: MessageInfo,
     msg: InstantiateMsg,
 ) -> StdResult<Response> {
