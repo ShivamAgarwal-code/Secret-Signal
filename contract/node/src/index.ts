@@ -46,6 +46,8 @@ const deployContract = async () => {
       )?.value
     );
 
+    console.log(codeId);
+
     const contractCodeHash = (
       await secretjs.query.compute.codeHashByCodeId({
         code_id: codeId.toString(),
